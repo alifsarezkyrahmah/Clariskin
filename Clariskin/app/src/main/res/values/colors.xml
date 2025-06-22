@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Warna Utama -->
+    <color name="primary">#FF8F57</color>
+    <color name="primary_dark">#CC7145</color> <!-- sedikit lebih gelap -->
+    <color name="primary_light">#FFB58A</color> <!-- sedikit lebih terang -->
+    <color name="on_primary">#FFFFFFFF</color> <!-- teks putih di atas warna utama -->
+
+    <color name="dark_grey">#424242</color>
+
+    <!-- Warna Sekunder (opsional) -->
+    <color name="secondary">#FFA57A</color>
+    <color name="on_secondary">#FF000000</color> <!-- teks hitam di atas warna sekunder -->
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F8F8F8">
+
+    <TextView
+        android:id="@+id/tv_recommendation_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Personalized Recommendations"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_user_preferences_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your skin: Normal, Problem: Dryness"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Tombol untuk mengubah preferensi -->
+    <Button
+        android:id="@+id/btn_change_preferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change My Skin Profile"
+        android:textColor="#007BFF"
+        android:background="@android:color/transparent"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="16dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/tv_no_recommendations_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No recommendations found for your selection. Please adjust your preferences in settings or explore all products."
+        android:textSize="16sp"
+        android:textColor="#888888"
+        android:gravity="center"
+        android:padding="24dp"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_recommended_products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/item_product_grid"/>
+
+</LinearLayout>
